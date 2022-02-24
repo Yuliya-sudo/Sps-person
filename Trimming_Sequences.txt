@@ -1,0 +1,35 @@
+please do
+
+$Sel1 = select in 0 pos 0;
+$Num1 = num($Sel1);
+
+$Sel2 = select in 1 pos 0;
+$Num2 = num($Sel2);
+
+if ($Num1 < $Num2)
+{
+  $i = 0;
+  while ($Num1 < $Num2)
+  {
+    delete $Sel1;
+    $i++;
+    $Sel1 = select in 0 pos $i;
+    $Num1 = num($Sel1);
+  }
+}
+else
+{
+  if ($Num1 > $Num2)
+  {
+    $j = 0;
+	while ($Num2 < $Num1)
+    {
+      delete $Sel2;
+      $j++;
+      $Sel2 = select in 1 pos $j;
+      $Num2 = num($Sel2);
+    }
+  }
+}
+
+thank you
